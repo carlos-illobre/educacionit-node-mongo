@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<title>Test API</title>
+<meta charset="utf-8" />
+</head>
+<body>
+    <section>
+        <h2>Crear alumno</h2>
+        <form>
+            <h3>
+                <span>http://localhost:8080/api/v1/alumnos</span>
+                <button type="button" onclick="postAlumno()">POST</button>
+            </h3>
+            <table>
+                <tr>
+                    <th>nombre</th>
+                    <td>
+                        <input id="post-alumno-nombre" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>password</th>
+                    <td>
+                        <input id="post-alumno-apellido" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <h4>response</h4>
+            <code id="postAlumnoStatus"></code>
+            <code id="postAlumnoResponse"></code>
+        </form>
+    </section>
+    <section>
+        <h2>Actualizar nombre del alumno</h2>
+        <form>
+            <h3>
+                <span>http://localhost:8080/api/v1/alumnos/</span><input id="put-alumno-id" type="type" /><span>/nombre/</span>
+                <button type="button" onclick="putAlumnoNombre()">PUT</button>
+            </h3>
+            <table>
+                <tr>
+                    <th>nombre</th>
+                    <td>
+                        <input id="put-alumno-nombre" type="text" />
+                    </td>
+                </tr>
+            </table>
+            <h4>response</h4>
+            <code id="putAlumnoNombreStatus"></code>
+            <code id="putAlumnoNombreResponse"></code>
+        </form>
+    </section>
+    <section>
+        <h2>Listar alumnos</h2>
+        <form>
+            <h3>
+                <span>http://localhost:8080/api/v1/alumnos</span>
+                <button type="button" onclick="getAlumnos()">GET</button>
+            </h3>
+            <h4>response</h4>
+            <code id="getAlumnosStatus"></code>
+            <code id="getAlumnosResponse"></code>
+        </form>
+    </section>
+<script>
+var xhttp = new XMLHttpRequest()
+
+function getQueryString(name) {
+    name = name.replace(/[\[\]]/g, "\\$&")
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)")
+    var results = regex.exec(window.location.href)
+    if (!results) return null
+    if (!results[2]) return ''
+    return decodeURIComponent(results[2].replace(/\+/g, " "))
+}
+
+function postAlumno() {
+    xhttp.open("POST", window.location.origin + "/api/v1/alumnos", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4) {
+            document.getElementById("postAlumnoResponse").innerHTML = xhttp.responseText;
+            document.getElementById("postAlumnoStatus").innerHTML = xhttp.status;
+        }
+    }
+    var nombre = document.getElementById("post-alumno-nombre").value
+    var apellido = document.getElementById("post-alumno-apellido").value
+    xhttp.send("nombre=" + nombre + "&apellido=" + apellido);
+}
+
+function putAlumnoNombre() {
+    var id = document.getElementById("put-alumno-id").value
+    var nombre = document.getElementById("put-alumno-nombre").value
+    xhttp.open("PUT", window.location.origin + "/api/v1/alumnos/" + id + '/nombre', true)
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4) {
+            document.getElementById("putAlumnoNombreResponse").innerHTML = xhttp.responseText
+            document.getElementById("putAlumnoNombreStatus").innerHTML = xhttp.status
+        }
+    }
+    xhttp.send("nombre=" + nombre);
+}
+
+function getAlumnos() {
+    xhttp.open("GET", window.location.origin + "/api/v1/alumnos", true);
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4) {
+            document.getElementById("getAlumnosResponse").innerHTML = xhttp.responseText;
+            document.getElementById("getAlumnosStatus").innerHTML = xhttp.status;
+        }
+    }
+    xhttp.send();
+}
+
+</script>
+</body>
+</html>
