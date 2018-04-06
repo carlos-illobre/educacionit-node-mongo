@@ -1017,3 +1017,95 @@ MongoError: authentication fail
 2018-04-03T07:35:54.937Z - info: 200 GET /api/v1/alumnos 292ms
 2018-04-03T07:35:56.795Z - info: 201 POST /api/v1/alumnos 200ms
 2018-04-03T07:36:01.625Z - info: 200 GET /api/v1/alumnos 175ms
+2018-04-06T06:44:53.784Z - info: Listening on port 8080
+2018-04-06T06:44:55.407Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T06:45:11.915Z - info: 301 GET /chat 3ms
+2018-04-06T06:45:11.924Z - info: 200 GET /chat/ 4ms
+2018-04-06T06:45:11.945Z - info: 404 GET /favicon.ico 3ms
+2018-04-06T06:45:18.461Z - info: 200 GET /chat.html 12ms
+2018-04-06T06:46:59.226Z - info: 200 GET /chat/ 2ms
+2018-04-06T06:47:05.980Z - info: 200 GET /chat/? 0ms
+2018-04-06T06:47:06.927Z - info: 304 GET /chat/? 1ms
+2018-04-06T06:47:07.035Z - info: 304 GET /chat/? 0ms
+2018-04-06T06:47:07.422Z - info: 304 GET /chat/? 1ms
+2018-04-06T06:53:13.683Z - info: Listening on port 8080
+2018-04-06T06:53:15.012Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T06:53:42.237Z - info: Listening on port 8080
+2018-04-06T06:53:43.378Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T06:54:29.120Z - info: Listening on port 8080
+2018-04-06T06:54:30.177Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T06:55:02.336Z - info: Listening on port 8080
+2018-04-06T06:55:03.762Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T06:58:17.986Z - info: Listening on port 8080
+2018-04-06T06:58:19.447Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:08:12.259Z - info: Listening on port 8080
+2018-04-06T07:08:13.702Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:08:25.105Z - info: 200 GET / 54ms
+2018-04-06T07:08:30.277Z - info: 200 GET /chat/ 2ms
+2018-04-06T07:09:06.482Z - info: Listening on port 8080
+2018-04-06T07:09:07.569Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:09:19.484Z - info: 304 GET /chat/ 4ms
+2018-04-06T07:09:28.930Z - info: 304 GET /chat/ 1ms
+2018-04-06T07:17:03.971Z - info: Listening on port 8080
+2018-04-06T07:17:05.369Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:17:12.578Z - info: 304 GET /chat/ 3ms
+2018-04-06T07:17:48.341Z - info: Listening on port 8080
+2018-04-06T07:17:49.588Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:17:54.051Z - info: 304 GET /chat/ 5ms
+2018-04-06T07:21:24.066Z - info: Listening on port 8080
+2018-04-06T07:21:25.674Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:21:41.441Z - info: 200 GET /chat/ 7ms
+2018-04-06T07:22:30.220Z - info: Listening on port 8080
+2018-04-06T07:22:31.530Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:22:57.696Z - info: 304 GET /chat/ 5ms
+2018-04-06T07:26:15.106Z - info: Listening on port 8080
+2018-04-06T07:26:16.459Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:26:59.863Z - info: 200 GET /chat/ 8ms
+2018-04-06T07:27:16.423Z - info: 304 GET / 1ms
+2018-04-06T07:27:20.865Z - info: 304 GET /chat/ 0ms
+2018-04-06T07:32:30.450Z - info: Listening on port 8080
+2018-04-06T07:34:59.179Z - info: a user connected
+2018-04-06T07:36:16.781Z - info: user disconnected
+2018-04-06T07:36:16.800Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:36:33.944Z - info: a user connected
+2018-04-06T07:37:15.277Z - info: a user connected
+2018-04-06T07:37:19.785Z - info: a user connected
+2018-04-06T07:37:20.683Z - info: a user connected
+2018-04-06T07:37:22.813Z - info: user disconnected
+2018-04-06T07:37:24.414Z - info: user disconnected
+2018-04-06T07:37:25.401Z - info: a user connected
+2018-04-06T07:37:25.587Z - info: a user connected
+2018-04-06T07:37:25.780Z - info: a user connected
+2018-04-06T07:37:25.936Z - info: a user connected
+2018-04-06T07:37:26.081Z - info: a user connected
+2018-04-06T07:37:26.235Z - info: a user connected
+2018-04-06T07:37:26.386Z - info: a user connected
+2018-04-06T07:37:26.528Z - info: a user connected
+2018-04-06T07:37:26.945Z - info: a user connected
+2018-04-06T07:37:27.269Z - info: a user connected
+2018-04-06T07:37:28.338Z - info: a user connected
+2018-04-06T07:37:28.888Z - info: a user connected
+2018-04-06T07:37:29.771Z - info: a user connected
+2018-04-06T07:37:30.394Z - info: a user connected
+2018-04-06T07:37:30.558Z - info: a user connected
+2018-04-06T07:37:30.694Z - info: a user connected
+2018-04-06T07:37:30.824Z - info: a user connected
+2018-04-06T07:37:30.982Z - info: a user connected
+2018-04-06T07:38:01.829Z - info: Listening on port 8080
+2018-04-06T07:38:03.057Z - info: MongoDB connected at mongodb://ds231739.mlab.com:31739/educacionit
+2018-04-06T07:38:03.206Z - info: ATyU8fw6RyHg9b-vAAAA
+2018-04-06T07:38:03.207Z - info: a user connected
+2018-04-06T07:38:04.187Z - info: 2GXzbp0Lr3NnIhymAAAB
+2018-04-06T07:38:04.187Z - info: a user connected
+2018-04-06T07:40:54.687Z - info: user disconnected
+2018-04-06T07:40:54.688Z - info: user disconnected
+2018-04-06T07:40:54.690Z - info: YDyMVTm-RWrvHmxgAAAC
+2018-04-06T07:40:54.690Z - info: a user connected
+2018-04-06T07:40:54.691Z - info: hvwuRorRO9Af5eopAAAD
+2018-04-06T07:40:54.691Z - info: a user connected
+2018-04-06T07:40:54.692Z - info: oZPLWRBrbBmNu8TnAAAE
+2018-04-06T07:40:54.692Z - info: a user connected
+2018-04-06T07:40:54.693Z - info: _gddXjgf_hnnsxqdAAAF
+2018-04-06T07:40:54.693Z - info: a user connected
+2018-04-06T07:40:54.695Z - info: nVsgqYsjdoLsjswMAAAG
+2018-04-06T07:40:54.695Z - info: a user connected

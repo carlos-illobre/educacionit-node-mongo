@@ -13,9 +13,8 @@ const app = createExpressApp({
     database,
 })
 
-return http
+const server = http
 .createServer(app)
-.listen(port)
 .on('listening', function() {
     const addr = this.address()
     const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`
@@ -38,3 +37,20 @@ return http
         throw error
     }
 })
+.listen(port)
+
+const io = require('socket.io')(server)
+io.on('connection', socket => {
+
+    logger.info('a user connected')
+
+    socket.on('chat message', message => {
+        io.emit('chat message', message)
+    })
+
+    socket.on('disconnect', () => {
+        logger.info('user disconnected')
+    })
+
+})
+
