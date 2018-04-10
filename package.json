@@ -7,7 +7,10 @@
     "start": "node server.js",
     "debug": "node debug server.js",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules --copy-files",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "docker-compose build && docker-compose up",
+    "mongo:start": "docker-compose up mongo",
+    "mongo:cli": "docker exec -it mongo mongo"
   },
   "author": "",
   "license": "ISC",
