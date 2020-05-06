@@ -13,6 +13,8 @@
     "express": "^4.17.1",
     "glob": "^7.1.6",
     "json-mask": "^1.0.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.12",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
