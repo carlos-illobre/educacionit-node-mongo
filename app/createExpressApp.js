@@ -15,4 +15,8 @@ module.exports = ({ db }) => express()
     next()
   })
   .use(rootRouter)
+  .use((error, req, res, next) => {
+    consoel.error(error)
+    res.status(error.status || 500).json({ error })
+  })
 

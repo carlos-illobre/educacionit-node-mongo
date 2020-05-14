@@ -12,7 +12,9 @@ const alumnoSchema = Schema({
   }],
 })
 
-alumnoSchema.methods.saludar = function() {
+alumnoSchema.statics.saludar = async function() {
+  const users = await alumnoSchema.db.User.find()
+  console.log(users)
   return `Hola soy ${this.nombre} ${this.apellido}`
 }
 
